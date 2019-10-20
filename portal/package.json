@@ -1,0 +1,56 @@
+{
+    "name": "portal",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "watch": "webpack-dev-server --port 7000",
+        "build:portal": "webpack -p --progress"
+    },
+    "dependencies": {
+        "core-js": "^3.1.2",
+        "vue": "^2.6.10",
+        "single-spa": "^4.0.0",
+        "systemjs": "^0.21.4",
+        "zone.js": "^0.8.26",
+        "copy-webpack-plugin": "^4.5.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.0.0",
+        "@vue/cli-plugin-eslint": "^4.0.0",
+        "@vue/cli-service": "^4.0.0",
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.16.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "vue-template-compiler": "^2.6.10",
+        "clean-webpack-plugin": "^0.1.19",
+        "webpack": "^4.16.3",
+        "webpack-cli": "^3.0.8",
+        "webpack-dev-server": "^3.1.5"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "rules": {},
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ]
+}
